@@ -1,0 +1,44 @@
+Project 2 CPU Scheduling Simulation
+CS 321
+25 September 2018
+Randy Camacho
+
+Overview:
+Implements a Priority Queue using a Max Heap. Simulates CPU round robin
+scheduling.
+
+Included Files:
+CPUScheduling.java - source file
+Averager.java - source file
+ProcessGenerator.java - source file
+Process.java - source file
+MaxHeap.java - source file
+PQueue.java - source file
+README - this file
+
+Compiling and Running:
+To compile the files use the command javac *.java
+Once the files have been compiled the program can be ran by using the 
+usage - java CPUScheduling <maxProcessTime> <maxPriorityLevel> <timeToIncrementPriority> 
+<simulationTime> <processArrivalRate>
+
+Example - java CPUScheduling 5 5 5 100 0.4
+
+Program design and Important concepts:
+This program contains six source files all with different parts to the 
+program. CPUScheduling.java simulates the round robin CPU Scheduling algorithm.
+Averager.java keeps track of the number of processes in the simulation
+and computes the average turn around time. ProcessGenerator.java randomly
+generates processes with a given probability. Process.java defines a process.
+MaxHeap.java defines a max-heap. Pqueue.java defines a priority queue using
+max-heap.
+
+Testing:
+To test my program I ran it with the example input and made sure it 
+produced the correct output. I ensured that the program would run with
+different valid inputs. I also made sure that bad input would result
+in the printing of a usage statement.
+
+
+
+

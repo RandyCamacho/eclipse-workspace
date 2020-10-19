@@ -1,0 +1,49 @@
+Randy Camacho
+CS 354
+Interpreter 2
+
+##Overview
+In this assignment we added to our Interpreter to accept different expressions.
+
+##Files
+BoolExpr.java
+Environment.java
+EvalException.java
+Interpreter.java
+Node.java
+NodeAddop.java
+NodeAssn.java
+NodeBlock.java
+NodeExpr.java
+NodeFact.java
+NodeFactExpr.java
+NodeFactId.java
+NodeFactNum.java
+NodeMulop.java
+NodeNum.java
+NodeStmt.java
+NodeStmtAssn.java
+NodeStmtIfThen.java
+NodeStmtIfThenElse.java
+NodeStmtRd.java
+NodeStmtWhile.java
+NodeStmtWr.java
+NodeTerm.java
+NodeUnaryMinus.java
+Parser.java
+Scanner.java
+SyntaxException.java
+Token.java
+test
+Grammar
+
+##Compile and Testing
+To compile go to the file directory and run the command javac *.java
+To run and test the program cd into the test folder with: cd test then run the command: ./run
+all the test files should run. Errors or failures will appear if the tests failed.
+
+##Discussion
+I found this project to be extremely difficult and tough to get through. It took some time but I believe I got it to work the 
+way it was suppose to. I made more test files to test the new grammar and make sure that it ran the way it was supposed to.
+
+##Sources

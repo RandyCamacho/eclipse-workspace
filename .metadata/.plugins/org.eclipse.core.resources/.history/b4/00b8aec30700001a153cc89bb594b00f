@@ -1,0 +1,113 @@
+package sqlaccess;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MySQLAccess {
+	
+	private Connection connect = null;
+    private Statement statement = null;
+    private PreparedStatement preparedStatement = null;
+    private ResultSet resultSet = null;
+
+    public void readDataBase() throws Exception {
+        try {
+			// Choose either the  the MySQL (or MariaDB)option
+			// Remember to change "uid" and "pw" to your userid and password!
+			
+			/* 
+			// These lines support the MySQL option (local and remote)
+			// 
+			 * 
+			 */
+        	System.out.println("Starting..."); //
+        	
+   			// To use MySQL locally, uncomment the next 3 lines
+ 			// and replace <YOURPASSWORD> with your own database password
+/*			connect = DriverManager
+                    .getConnection("jdbc:mysql://onyx.boisestate.edu:22/empdept?"                 		
+                            + " user=msandbox&password=<YOURPASSWORD>"); 
+*/
+        	// TO use MySQL remotely (e.g., your laptop to onyx) uncomment the next four lines
+        	// and replace <YOURPORTNO> and <YOURPASSWORD> with your own data
+			connect = DriverManager
+                    .getConnection("jdbc:mysql://localhost:58552/empdept?"
+                    	+ " verifyServerCertificate=false&useSSL=true&"
+                        + "user=msandbox&password=Mjlroot&"
+                    	+ "serverTimezone=UTC"); 
+			
+
+            // Statement methods allow you to issue SQL queries to the database
+			// Statements contrast with preparedStatements which you'll see below
+            statement = connect.createStatement();
+            // resultSet contains the result of the SQL query
+            resultSet = statement
+                    .executeQuery("select DNAME from DEMO_DEPT where DEPTNO=30;");
+            System.out.println("Reached after SELECT");
+            
+            writeResultSet(resultSet);
+            System.out.println("Reached after WriteResultSet");
+              
+            // PreparedStatements can use variables and are more efficient AND MORE SECURE!
+            preparedStatement = connect
+                    .prepareStatement("insert into  DEMO_DEPT values (?, ?, ?)");
+
+            preparedStatement.setString(1, "70");
+            preparedStatement.setString(2, "Emergency");
+            preparedStatement.setString(3, "Boise");
+
+            preparedStatement.executeUpdate();
+            System.out.println("Reached after update");
+
+            preparedStatement = connect
+                    .prepareStatement("select DNAME from DEMO_DEPT where DEPTNO=70;");
+            resultSet = preparedStatement.executeQuery();
+            writeResultSet(resultSet);
+            System.out.println("Reached after retrieval of Deptno 70");
+
+            // Remove the inserted row
+            preparedStatement = connect
+            .prepareStatement("delete from DEMO_DEPT where DEPTNO=70;");
+            int resultSet2 = preparedStatement.executeUpdate();
+            
+        } catch (Exception e) {
+            throw e;
+        } finally {
+            close();
+            System.out.println("Reached close");
+        }
+    }         
+            private void writeResultSet(ResultSet resultSet) throws SQLException {
+                // ResultSet is initialized before the first data set
+                while (resultSet.next()) {
+                    // It is possible to get the columns via name
+                    // also possible to get the columns via the column number
+                    // which starts at 1
+                	String deptname = resultSet.getString("DNAME");
+                	System.out.println("Retrieved Dept Name: "+deptname);
+                }
+            }
+            // You need to close the resultSet
+            private void close() {
+                try {
+                    if (resultSet != null) {
+                        resultSet.close();
+                    }
+
+                    if (statement != null) {
+                        statement.close();
+                    }
+
+                    if (connect != null) {
+                        connect.close();
+                    }
+                } catch (Exception e) {
+
+                }
+            }
+
+}

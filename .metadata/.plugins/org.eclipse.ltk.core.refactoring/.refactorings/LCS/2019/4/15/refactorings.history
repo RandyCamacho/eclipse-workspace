@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;LCS.java&apos; to &apos;LongestCommonSubsequence.java&apos;&#x0A;- Original project: &apos;LCS&apos;&#x0A;- Original element: &apos;LCS.java&apos;&#x0A;- Renamed element: &apos;LongestCommonSubsequence.java&apos;" description="Rename compilation unit &apos;LCS.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/&lt;{LCS.java" name="LongestCommonSubsequence.java" references="false" stamp="1554802791603" version="1.0"/>
+</session>

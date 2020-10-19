@@ -1,0 +1,5 @@
+package sqlaccess;
+
+public class MySQLAccess {
+
+}

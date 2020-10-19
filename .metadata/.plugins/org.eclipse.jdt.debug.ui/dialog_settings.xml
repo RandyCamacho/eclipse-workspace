@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=cs-hu-271-login-master/src&amp;lt;edu.boisestate.panicdrivendevelopment{LoginApplication.java[LoginApplication&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=mucommander-core/\/Users\/randycamacho\/.gradle\/caches\/modules-2\/files-2.1\/org.testng\/testng\/6.11\/1fdd5e22f50b14f6d846163456e8c9a7657626fb\/testng-6.11.jar&amp;lt;org.testng(Converter.class[Converter&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=mucommander-core/src\/main\/java&amp;lt;com.mucommander{muCommander.java[muCommander&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jedit/jEdit&amp;lt;org.gjt.sp.jedit.bsh.classpath{BshClassPath.java[BshClassPath&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jedit/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_181.jdk\/Contents\/Home\/jre\/lib\/rt.jar&amp;lt;jdk.internal.org.objectweb.asm.util(ASMifier.class[ASMifier&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=jedit/jEdit&amp;lt;org.gjt.sp.jedit{jEdit.java[jEdit&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=DBConnect/&amp;lt;{Main.java[Main&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="420" key="DIALOG_X_ORIGIN"/>
+			<item value="72" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

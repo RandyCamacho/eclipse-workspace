@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MySQLAccess.java&apos; to &apos;DBConnect1&apos;&#x0A;- Original project: &apos;DBConnect&apos;&#x0A;- Destination element: &apos;DBConnect1&apos;&#x0A;- Original element: &apos;MySQLAccess.java&apos;" description="Copy compilation unit" destination="=DBConnect1" element1="/&lt;{MySQLAccess.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1573668005291" units="1" version="1.0"/>
+</session>

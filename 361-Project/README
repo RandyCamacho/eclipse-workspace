@@ -1,0 +1,26 @@
+Deterministic Finite Automata
+Randy Camacho
+CS-361 Section-3
+Semester: Spring 2019
+
+##Overview
+A java program that models a deterministic finite automaton.
+
+##Compiling
+From the command line to compile cd into the directory with all the folders and files.
+Run the command: javac fa/dfa/DFADriver.java
+
+##Discussion
+I found the implementation of this project to be a challenge at first but once I figured out how to 
+correctly implement the hash map and hash sets things went smoothly. The most difficult part of this assignment
+was implementing the toString method and making it match up with the porject description.
+
+##Testing
+To test my program I first compiled the program then ran it with the files that were 
+provided and made sure that the output matched what the description wanted.
+The command I used to Test the program: java fa.dfa.DFADriver ./tests/p1tc1.txt
+
+##Sources
+https://www.geeksforgeeks.org/java-util-hashmap-in-java/
+https://www.geeksforgeeks.org/hashset-in-java/
+https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html

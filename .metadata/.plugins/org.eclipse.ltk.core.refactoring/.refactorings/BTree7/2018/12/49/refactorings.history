@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;BTRee3&apos;&#x0A;- Original project: &apos;BTree7&apos;&#x0A;- Destination element: &apos;BTRee3&apos;&#x0A;- Original elements:&#x0A;     TreeObject.java&#x0A;     Cache_Level.java&#x0A;     Cache.java&#x0A;     BTree.java&#x0A;     GeneBankCreateBTree.java" description="Copy compilation units" destination="=BTRee3" element1="/&lt;{TreeObject.java" element2="/&lt;{Cache_Level.java" element3="/&lt;{Cache.java" element4="/&lt;{BTree.java" element5="/&lt;{GeneBankCreateBTree.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1544006914298" units="5" version="1.0"/>
+</session>

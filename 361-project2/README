@@ -1,0 +1,26 @@
+NFA
+Randy Camacho
+CS-361 Section 3
+
+##Overview
+A java program that mimics a NFA
+
+##Compiling and Running
+From the command line to compile cd into the directory with all the folders and files.
+Run the command: javac fa/nfa/NFADriver.java
+To run the program use the command: java fa.nfa.NFADriver <input file>
+
+
+##Discussion
+I found this project to be challenge especially when it came to implementing the getDFA method.
+I ran into countless amounts of null pointer errors but was eventually able to get it working.
+From the feedback I got from part 1 of the project I did my best to use more object oriented 
+principles.
+
+##Testing 
+To test my program I ran it with the test cases that were provided and made sure that it was producing 
+what was expected.
+
+##Sources
+https://www.programcreek.com/2013/03/hashset-vs-treeset-vs-linkedhashset/
+https://www.geeksforgeeks.org/java-util-hashmap-in-java/

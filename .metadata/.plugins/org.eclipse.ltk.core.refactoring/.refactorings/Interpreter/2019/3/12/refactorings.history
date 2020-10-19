@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Parser.java&apos; to &apos;Interpreter2/(default package)&apos;&#x0A;- Original project: &apos;Interpreter&apos;&#x0A;- Destination element: &apos;Interpreter2/(default package)&apos;&#x0A;- Original element: &apos;Parser.java&apos;" description="Copy compilation unit" destination="=Interpreter2/&lt;" element1="/&lt;{Parser.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1553166625436" units="1" version="1.0"/>
+</session>

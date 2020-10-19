@@ -1,0 +1,23 @@
+Project 1: Cache
+
+Author: Randy Camacho
+Class: CS321
+
+Overview
+This program works as a Cache implemented using a linked list.
+
+Compiling and Using
+To compile this program first compile Cache.java using the command
+javac Cache.java. Next compile Test.java using javac Test.java.
+Once both classes are compiled the program can be used in two 
+different ways: java Test 1 <cache size> <input textfile name> or
+java Test 2 <1st-level cache size> <2nd-level cache size> <input textfile name>
+
+Testing
+To test my program I entered the provided data and compared the results
+against the results that were given to us.
+
+Sources Used
+https://docs.oracle.com/cd/A97688_16/generic.903/a97690/objcache.htm
+https://stackoverflow.com/questions/25055210/java-lru-cache-using-linkedlist
+https://www.geeksforgeeks.org/lru-cache-implementation/

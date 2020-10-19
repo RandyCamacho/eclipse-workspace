@@ -1,0 +1,33 @@
+Randy Camacho
+CS-361
+Project 3
+
+##Overview
+Reads in a regular expression and turns it into a NFA
+
+##Compiling and Running
+To compile from the top directory
+javac -cp ".:./CS361FA.jar" re/REDriver.java
+
+to run after the jar file is included
+java -cp ".:./CS361FA.jar" re.REDriver ./tests/p3tc1.txt
+
+##Discussion
+The link that was provided helped me with this project a lot. It provided
+a good skeleton to use and with some trial and error I was able to add the 
+few changes and produce the correct output. I began by looking through the 
+provided link and implementing the functions that I could. I then added the 
+addirional lines of code to be able to create the nfa. Being able to use 
+the nfa and dfa libraries made it much easier to implement the machine. One
+of the diffculties I had was when dealing with the choice function and needing
+to get the final states but I was able to figure it out by using a foreach loop
+and using the libraries that were provided. 
+
+##Testing
+To test this program I ran it with all the different test files that were provided
+and made sure that I was getting the right output.
+
+##Sources
+http://matt.might.net/articles/parsing-regex-with-recursive-descent/
+https://www.geeksforgeeks.org/toc-regular-expression-to-nfa/
+

@@ -1,0 +1,10 @@
+# Java Executables
+/bin/
+*.jar
+
+# Java binaries
+*.class
+
+# Eclipse project files
+.project
+.classpath

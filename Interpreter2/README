@@ -1,0 +1,45 @@
+Randy Camacho
+CS 354
+Interpreter
+
+##Overview
+In this assignment we added onto an interpreter in order for it to 
+handle doubles and a unary minus operation.
+
+##Files
+Environment.java
+EvalException.java
+Interpreter.java
+Node.java
+NodeAddop.java
+NodeAssn.java
+NodeExpr.java
+NodeFact.java
+NodeFactExpr.java
+NodeFactId.java
+NodeFactNum.java
+NodeFactUnaryMinus.java
+NodeMulop.java
+NodeStmt.java
+NodeTerm.java
+Parser.java
+Scanner.java
+SyntaxException.java
+Token.java
+test
+test/test-comments
+test/test-minus
+test/test-plus
+test/test-two
+test/test-unaryminus
+test/run
+Grammar
+
+##Compile and Testing
+To compile go to the file directory and run the command javac *.java
+To run and test the program cd into the test folder with: cd test then run the command: ./run
+all the test files should run. Errors or failures will appear if the tests failed.
+
+##Program Design
+We added to the starter files by re-creating the environment class adding a unaryminus class and editing the scanner
+and parser classes to accept comments.

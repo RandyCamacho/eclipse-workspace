@@ -1,0 +1,80 @@
+CS321 - Program 4 B-Tree
+Spring 18
+Group-Names: Randy Camacho, Oliver Kastel, Songming Han, Mark Mijares
+
+Overview
+A program that reads in a genebank, creates a B-tree, and counts the frequency of DNA sequences.
+
+Files:
+BTree.java
+BTreeNode.java
+Cache.java
+GeneBankCreateBTree.java
+GeneBankSearchBTree.java
+TreeObject.java
+README - This File
+
+Compiling and Running
+To compile, make sure that all the source files are in a directory and run the command javac *.java
+To run: java GeneBankCreateBTree <0/1(no/with Cache)> <degree> <gbk file> <sequence length>
+[<cache size>] [<debug level>]
+java GeneBankSearch <0/1(no/with Cache)> <btree file> <query file> [<cache size>]
+[<debug level>]
+
+Discussion
+This project had its ups and downs. We ran into trouble with the BTree source file and its implementation.
+We each had different versions of the file then pulled together and implemented a complete and working 
+final version. For the most part all of our problems were minor and we were able to work through them.
+
+First, the BTree writes metadata to the disk. This 
+ metadata contains BTree parameters (think size, 
+ degree, offset of root node). 
+ 
+ Insertion location is handled by a variable. Node 
+ metadata (keys, isleaf, etc.) is the first thing 
+ written once a node is created. 
+ 
+ BTree nodes contain the following data: 
+ - LinkedList of child pointers 
+ - LinkedList of TreeObjects 
+ - Offset of the parent 
+ - Self offset. 
+ 
+ Creation process is in this order: 
+ root -> child pointer -> object (until the last child 
+ is written). 
+ 
+ When writing the root node, we considered the following 
+ two options: 
+ - Split the root (create new node, give it the previous 
+   t-1 keys, new root gets medium key, move children, 
+   and write all nodes to disk). 
+ - Splitting a non-root (same but less node creation). 
+ 
+ The null characters we described above are just unused 
+ spots in the BTree. 
+ 
+ 2. Improvement in runtime depending on cache size. 
+ 
+ $ time java GeneBankCreateBTree 0 0 data/test1.gbk 7 
+ real        1m40.006s 
+ user        0m21.082s 
+ sys         1m11.783s 
+ 
+ $ time java GeneBankCreateBTree 1 0 data/test1.gbk 7 100 
+ real        1m01.112s 
+ user        9.619s 
+ sys         55.314s 
+ 
+ $ time java GeneBankCreateBTree 1 0 data/test1.gbk 7 500 
+ real        57.223s 
+ user        0m8.926s 
+ sys         42.050s 
+ 
+ The cache makes the program run faster, but not 
+ significantly so at any value we tested. A similar 
+ story unfolded when testing GeneBankSearch, so we did 
+ not feel the need to include it. No significant 
+ changes.
+ 
+ 
